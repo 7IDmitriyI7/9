@@ -1,0 +1,27 @@
+using System;
+
+namespace _9._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите день года");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a > 0 && a <= 365)
+            {
+
+                int k = a % 7;
+                if (k == 0)
+                {
+                    k = 7;
+                }
+                Console.WriteLine("Номер дня недели равен " + k);
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
+        }
+    }
+}
